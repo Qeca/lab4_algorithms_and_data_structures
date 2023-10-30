@@ -93,8 +93,7 @@ class ArrayCase(unittest.TestCase):
         for i in students:
             arr.add(i)
         arr.sort_course()
-        self.assertEqual(f"{arr}", "[(Martin Michael Christopher 1 111C 19 76.5) (Taylor William Robert 1 107C 19 81.0) (Garcia Mia Emma 1 119C 19 74.0) (Robinson Ava Charlotte 1 115C 19 77.0) (Brown Daniel Michael 1 103C 19 78.5) (Jones Sophia Liam 2 113A 20 84.0) (Hall Charlotte Mia 2 117A 20 80.5) (White Matthew Joseph 2 109A 20 79.5) (Miller James David 2 105A 20 75.0) (Smith John William 2 101A 20 85.5) (Moore Oliver Ethan 3 114B 21 91.0) (Anderson Sophia Elizabeth 3 106B 21 92.5) (Harris Lily Grace 3 110B 21 93.5) (Lee Benjamin Lucas 3 118B 21 94.5) (Johnson Emily Rose 3 102B 21 90.0) (Thomas Emma Oliver 4 112D 22 89.0) (King Liam Aiden 4 120D 22 90.5) (Adams Ethan Noah 4 116D 22 86.5) (Clark Ava Mary 4 108D 22 87.5) (Wilson Olivia Grace 4 104D 22 88.0) ]")
-
+        self.assertEqual(f"{arr}", "[(Clark Ava Mary 4 108D 22 87.5) (Adams Ethan Noah 4 116D 22 86.5) (Wilson Olivia Grace 4 104D 22 88.0) (King Liam Aiden 4 120D 22 90.5) (Thomas Emma Oliver 4 112D 22 89.0) (Moore Oliver Ethan 3 114B 21 91.0) (Anderson Sophia Elizabeth 3 106B 21 92.5) (Harris Lily Grace 3 110B 21 93.5) (Lee Benjamin Lucas 3 118B 21 94.5) (Johnson Emily Rose 3 102B 21 90.0) (Jones Sophia Liam 2 113A 20 84.0) (Miller James David 2 105A 20 75.0) (Smith John William 2 101A 20 85.5) (White Matthew Joseph 2 109A 20 79.5) (Hall Charlotte Mia 2 117A 20 80.5) (Robinson Ava Charlotte 1 115C 19 77.0) (Taylor William Robert 1 107C 19 81.0) (Brown Daniel Michael 1 103C 19 78.5) (Martin Michael Christopher 1 111C 19 76.5) (Garcia Mia Emma 1 119C 19 74.0) ]")
 
 if __name__ == '__main__':
     unittest.main()

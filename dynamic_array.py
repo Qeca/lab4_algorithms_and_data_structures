@@ -111,10 +111,10 @@ class DynamicArray(Generic[T]):
         left_child = (2 * root_index) + 1
         right_child = (2 * root_index) + 2
 
-        if left_child < heap_size and self.get(left_child).course > self.get(largest).course:
+        if left_child < heap_size and self.get(left_child).course < self.get(largest).course:
             largest = left_child
 
-        if right_child < heap_size and self.get(right_child).course > self.get(largest).course:
+        if right_child < heap_size and self.get(right_child).course < self.get(largest).course:
             largest = right_child
 
         if largest != root_index:

@@ -215,6 +215,7 @@ class DoublyLinkedList(Generic[T]):
             for el in range(support[i]):
                 sup_2.append(i + min_value)
                 index -= 1
+        sup_2.sort(reverse=True)
         a = []
         for k in range(len(sup_2)):
             a.append(self.get(sup_1.index(sup_2[k])))
